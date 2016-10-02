@@ -29,7 +29,7 @@ if (isset($_POST['login'])){
 	<div>
 		<img src="">
 	</div>
-		<input type="text" placeholder="Username" name="uname" required><br>
+		<input type="text" placeholder="Username or E-mail" name="uname" required><br>
 		<input type="password" placeholder="Password" name="upassword" required><br>
 		<input type="text" placeholder="E-mail" name="uemail" required><br>
 		<button type="submit" name="login" class="signin"><span>Sign In</span></button><br>

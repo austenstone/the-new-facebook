@@ -1,7 +1,7 @@
 *{
 	font-family: 'Roboto', sans-serif;
 }
-h1,h2,h3,h4,h5,h6{
+h1, h2, h3, h4, h5, h6, .navchild{
 	font-family: 'Oswald', sans-serif;
 }
 .logincontainer{
@@ -104,4 +104,37 @@ input{
 .signin:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+.mainheader{
+	height: 38px;
+	width: 100%;
+	z-index: 999;
+	box-shadow: 10px 0px 40px 0px;
+	position: fixed;
+	background: #36373c;
+	padding: 10 20px;
+	border-radius: 0px 0px 10px 10px;
+}
+
+.logo{
+	
+width: 20%;
+	
+display: inline-block;
+}.logo img{
+	height:100%;
+}
+
+.nav{width: 73%;vertical-align: top;height: 100%;display: inline-block;color:#848484;}.navchild{
+	transition:.5s;
+	display:inline-block;
+	font-size: 1.5em;
+	color:#848484;
+}.navchild:after{content:"|";padding:0px 10px;color:#848484;}
+.navchild:hover{color:white;}
+
+body{
+	margin: 0px;
+	padding: 0px;
 }
