@@ -41,6 +41,6 @@ if(isset($_POST['signup'])){
 		<input type="password" placeholder="Password" name="upassword" required><br>
 		<input type="text" placeholder="E-mail" name="uemail" required><br>
 		<button type="submit" class="signin"><span>Register</span></button><br><br><br>
-	</form>
-	<a href="login.php">Already have an account?<br><button type="submit" class="signin"><span>Log In</span></button><br></a>
+</form>
+	<a href="login.php">Already have an account?<br><div class="signin"><span>Log In</span></div><br></a>
 </div>
