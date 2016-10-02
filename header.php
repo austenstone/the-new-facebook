@@ -3,7 +3,7 @@
 
 <div class="mainheader">
 	<div class="logo">
-		<img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png">
+		<img src="http://3.bp.blogspot.com/-r0cSTXYgMMc/UFFj5zUb5OI/AAAAAAAAIyg/EFb-1uiqunI/s1600/globe.png">
 	</div>
 	<?php include 'nav.php'?>
 </div>
