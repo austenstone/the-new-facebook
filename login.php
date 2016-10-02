@@ -10,19 +10,17 @@ if (isset($_POST['login'])){
     if ($checkifuserexists -> num_rows > 0){
         echo "<h1><center>Found a user</center></h1>";
         $row = mysqli_fetch_array($checkifuserexists);
-        $hashed_password = $row['password'];
+        $hashed_password = $row["password"];
+		echo $password;
         echo $hashed_password;
         echo "<h1><center>Password check</center></h1>";
-        if (password_verify($password, $hashed_password)){
+        if (password_verify('test', $hashed_password)){
             header('Location: index.php');
         }else{
             echo "<h1><center>Wrong log in information! Try again!</center></h1>";
         }
     }
-}
-
-
- ?>
+}?>
 <div class="logincontainer">
 <form class="form1" action="login.php" method="post" id="loginform">
 	<div class="imgcontainer">
