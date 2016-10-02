@@ -2,6 +2,8 @@
 require_once 'pdoconnection.php';
 require_once 'header.php';
 
+session_start();
+
 if (isset($_POST['login'])){
     $username = $_POST['uname'];
     $password = $_POST['upassword'];
@@ -11,6 +13,7 @@ if (isset($_POST['login'])){
         $row = mysqli_fetch_array($checkifuserexists);
         $hashed_password = $row["password"];
         if (password_verify($password, $hashed_password)){
+            $_SESSION['id'] = $username;
             header('Location: index.php');
         }else{
             echo "<h1><center>Wrong log in information! Try again!</center></h1>";
