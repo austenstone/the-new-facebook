@@ -13,6 +13,7 @@
 	<div class="usertopright">
 		<div class="usertopright1">
 			<h2><?php echo "<p style='display:inline;'>Signed in as <div style='text-transform: capitalize;display:inline;'> " . $_SESSION['id']  . " </div>!</p>" ?></h2>
+			<a style="font-size: .7em;color:inherit;text-decoration:none;" href="editprofile.php"><p>edit profile</p></a>
 		</div>
 		<div class="logout">
 			<a href="logout.php"><p>LOG OUT</p></a>

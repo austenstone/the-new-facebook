@@ -9,9 +9,11 @@ session_start();
 		<div class="cover1" style="background:url(http://www.simplytravel.co.za/gallerylive/Seychelles_Surfing_banner.jpg) no-repeat;background-position: 50%;"></div>
 	</div>
 	<div class="mainbanner">
-	<h2><?php echo "<p style='display:inline;'>Hello <div style='text-transform: capitalize;display:inline;'> " . $_SESSION['id']  . "</div></p>" ?></h2>
+	<h2><?php echo "<div style='text-transform: capitalize;display:inline;'> " . $_SESSION['id']  . "</div>" ?></h2>
 	</div>
 </div>
 </body>
+<?php $time = date('Y-m-d G:i:s');
+echo $time;?>
 
 <?php include 'footer.php' ?>

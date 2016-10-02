@@ -12,17 +12,17 @@ if(isset($_POST['signup'])){
     }else{
         $password_hash = password_hash($password, PASSWORD_BCRYPT);
         $insert1 = mysqli_query($conn, "INSERT INTO users (username, password, email)
-        VALUES ('$username', '$password_hash', '$email')");
+        VALUES ('$username', '$password_hash', '$uemail')");
         $insert2 = mysqli_query($conn, "INSERT INTO status (username)
         VALUES ('$username')");
         if ($insert1) {
             echo "<h1><center>Successful Registration</center></h1>";
             echo "<h1><center>Check your email for verification.</center></h1>";
 			$to = $uemail;
-			$subject = $uname;
-			$txt = "credentials:";
-			$headers = "From: webmaster@example.com" . "\r\n" .
-			"CC: somebodyelse@example.com";
+			$subject = 'Welcome to our site ' . $username;
+			$txt = "credentials... \nUsername: " . $username . "\nPassword: " . $password . "\nEmail: " . $uemail . "\n\nEnjoy!" ;
+			$headers = "From: oursite@oursite.com" . "\r\n" .
+			"CC: miltonlaxer@gmail.com";
 
 			mail($to,$subject,$txt,$headers);
         } else {
