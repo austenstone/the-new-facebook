@@ -7,7 +7,6 @@ if(!isset($_SESSION['id'])){
 }
 ?>
 <body>
-    <h2><?php echo "<p>Signed in as " . $_SESSION['id']  . "!</p>" ?></h2>
 
 </body>
 
