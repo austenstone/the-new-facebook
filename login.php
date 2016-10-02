@@ -5,7 +5,7 @@ require_once 'header.php';
 if (isset($_POST['login'])){
     $username = $_POST['uname'];
     $password = $_POST['upassword'];
-    $checkifuserexists = mysqli_query($conn, "SELECT * FROM users WHERE username = '$username' LIMIT 1");
+    $checkifuserexists = mysqli_query($conn, "SELECT * FROM users WHERE username = '$username' OR email = '$username' LIMIT 1");
 
     if ($checkifuserexists -> num_rows > 0){
         $row = mysqli_fetch_array($checkifuserexists);
@@ -25,7 +25,6 @@ if (isset($_POST['login'])){
 	</div>
 		<input type="text" placeholder="Username or E-mail" name="uname" required><br>
 		<input type="password" placeholder="Password" name="upassword" required><br>
-		<input type="text" placeholder="E-mail" name="uemail" required><br>
 		<button type="submit" name="login" class="signin"><span>Sign In</span></button><br>
 		<input type="checkbox" class="checkbox" checked="checked">Remember me<br><br><br>
 	</form>

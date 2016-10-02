@@ -5,7 +5,6 @@ require_once 'header.php';
 
 
 if(isset($_POST['signup'])){
-    echo "<h1><center>Button works</center></h1>";
     $username = $_POST['uname'];
     $password = $_POST['upassword'];
     $email = $_POST['uemail'];
