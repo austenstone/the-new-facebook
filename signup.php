@@ -5,7 +5,7 @@ require_once 'header.php';
 
 
 if(isset($_POST['signup'])){
-
+    echo "<h1><center>Button works</center></h1>";
     $username = $_POST['uname'];
     $password = $_POST['upassword'];
     $email = $_POST['uemail'];
@@ -40,7 +40,7 @@ if(isset($_POST['signup'])){
 		<input type="text" placeholder="Username" name="uname" required><br>
 		<input type="password" placeholder="Password" name="upassword" required><br>
 		<input type="text" placeholder="E-mail" name="uemail" required><br>
-		<button type="submit" class="signin"><span>Register</span></button><br><br><br>
+		<button type="submit" name="signup" class="signin"><span>Register</span></button><br><br><br>
 </form>
 	<a href="login.php">Already have an account?<br><div class="signin"><span>Log In</span></div><br></a>
 </div>
