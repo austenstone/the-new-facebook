@@ -132,7 +132,7 @@ display: inline-block;
 	height:100%;
 }
 
-.nav{width: 73%;vertical-align: top;height: 100%;display: inline-block;color:#848484;}.navchild{
+.nav{width: 50%;vertical-align: top;height: 100%;display: inline-block;color:#848484;}.navchild{
 	transition:.5s;
 	display:inline-block;
 	font-size: 1.5em;
@@ -146,4 +146,59 @@ body{
 }
 .signup .mainheader,.login .mainheader{
 	display:none;
+}
+
+.usertopright{
+	text-align:right;
+	width: 24%;
+	vertical-align: top;
+	line-height: 0px;
+	display: inline-block;
+}
+.usertopright1{
+	display:inline-block;
+	padding: 0px 30px;
+	color: white;
+}.usertopright1 *{
+font-family: 'Oswald', sans-serif;
+}.usertopright1 p{
+	margin: 0px;
+}
+
+.logout{
+	display:inline-block;
+	padding: 0px 10px;
+	background: black;
+	border-radius: 10px;
+}
+
+.logout p{
+	margin: 20px;
+	transition: 2s;
+	display: inline-block;
+	font-size: 1.5em;
+	color: #848484;
+	font-family: 'Oswald', sans-serif;
+}
+.logout p:hover{color:red;}
+.wrapper{
+	width: 80%;
+    margin: auto;
+}
+.cover{
+	width:100%;
+	height:200px;
+	 /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left, white , #36373c, white); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, white , #36373c, white); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, white , #36373c, white); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, white , #36373c, white); /* Standard syntax */
+	display: inline-block;
+	position:relative;
+	z-index: -99;
+}
+.cover1{
+	width:100%;
+	height:100%;
+	position:absolute;
 }

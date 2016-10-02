@@ -24,7 +24,6 @@ if (isset($_POST['status'])){
     	</form>
     </div>
 
-
 </body>
 
 <?php include 'footer.php' ?>
