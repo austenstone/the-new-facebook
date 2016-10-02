@@ -11,9 +11,11 @@ if(isset($_POST['signup'])){
         echo "<h1><center>Username already taken</center></h1>";
     }else{
         $password_hash = password_hash($password, PASSWORD_BCRYPT);
-        $insert = mysqli_query($conn, "INSERT INTO users (username, password, email)
+        $insert1 = mysqli_query($conn, "INSERT INTO users (username, password, email)
         VALUES ('$username', '$password_hash', '$email')");
-        if ($insert) {
+        $insert2 = mysqli_query($conn, "INSERT INTO status (username)
+        VALUES ('$username')");
+        if ($insert1) {
             echo "<h1><center>Successful Registration</center></h1>";
             echo "<h1><center>Check your email for verification.</center></h1>";
 			$to = $uemail;
