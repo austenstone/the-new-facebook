@@ -7,7 +7,8 @@ if(!isset($_SESSION['id'])){
 }
 ?>
 <body>
-    <h2> You've been successfully logged in </h2>
+    <h2><?php echo "<p>Signed in as " . $_SESSION['id']  . "!</p>" ?></h2>
+
 </body>
 <footer>
 <p>copyright - Austen Stone & Max 2016</p>
