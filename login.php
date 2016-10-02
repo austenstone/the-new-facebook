@@ -16,10 +16,7 @@ if (isset($_POST['login'])){
             echo "<h1><center>Wrong log in information! Try again!</center></h1>";
         }
     }
-}
-
-
- ?>
+}?>
 <div class="logincontainer">
 <form class="form1" action="login.php" method="post" id="loginform">
 	<div class="imgcontainer">
