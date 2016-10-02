@@ -1,6 +1,5 @@
 <?php
 require_once 'pdoconnection.php';
-require_once 'header.php';
 
 session_start();
 
@@ -20,8 +19,11 @@ if (isset($_POST['login'])){
         }
     }
 }?>
+<div class="login">
+<?php require_once 'header.php'; ?>
 <div class="logincontainer">
 <form class="form1" action="login.php" method="post" id="loginform">
+	<h1>Login</h1>
 	<div class="imgcontainer">
 	<div>
 		<img src="">
@@ -32,4 +34,5 @@ if (isset($_POST['login'])){
 		<input type="checkbox" class="checkbox" checked="checked">Remember me<br><br><br>
 	</form>
 	<a href="signup.php">Don't have an account Yet?<br><div class="signin"><span>Register</span></div><br></a>
+</div>
 </div>

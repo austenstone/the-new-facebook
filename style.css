@@ -13,13 +13,12 @@ h1, h2, h3, h4, h5, h6, .navchild{
 	top: 50%;
 	left: 50%;
 	position: absolute;
-	margin: -215.5px 0 0 -330px;
+	margin: -290px 0 0 -270px;
 	background:#36373c;
 	padding: 20px 40px;
 	border-radius:10px;
 	box-shadow:0px 10px 50px -10px black;
 	color:white;
-	
 }.logincontainer a{color:white;text-decoration:none;}
 .signin{
 	background-color:#14a27c;
@@ -37,9 +36,9 @@ h1, h2, h3, h4, h5, h6, .navchild{
 }
 .form1{
 	position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -185px 0px 0px -160px;
+	top: 50%;
+	left: 50%;
+	margin: -215px 0px 0px -160px;
 }
 input{
 	border:none;
@@ -137,4 +136,7 @@ display: inline-block;
 body{
 	margin: 0px;
 	padding: 0px;
+}
+.signup .mainheader,.login .mainheader{
+	display:none;
 }
