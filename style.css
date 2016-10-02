@@ -9,12 +9,17 @@ h1,h2,h3,h4,h5,h6{
 	width: 500px;
 	margin: auto;
 	text-align:center;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	margin: -215.5px 0 0 -330px;
 	background:#36373c;
 	padding: 20px 40px;
 	border-radius:10px;
-	box-shadow:0px 10px 50px -10px;
+	box-shadow:0px 10px 50px -10px black;
 	color:white;
-}
+	
+}.logincontainer a{color:white;text-decoration:none;}
 .signin{
 	background-color:#14a27c;
 	padding:10px;
@@ -25,18 +30,22 @@ h1,h2,h3,h4,h5,h6{
 	margin-bottom:10px;
 	box-shadow:0px 10px 50px -10px black;
 	border-style:none;
+    font-size: 1.3em;
+	cursor: pointer;
 }
 input{
 	border:none;
 	-webkit-appearance: none;
 	outline: none;
 	width:300px;
+	border-style:none;
 	border-radius:10px;
 	margin-bottom:10px;
 	padding:10px;
 }
 .checkbox{
 	width:initial;
+	-webkit-appearance: checkbox;
 }
 .colors{
 	color:#36373c; /* Dark Grey */
@@ -45,4 +54,46 @@ input{
 	color:#ecd8a2; /* Light Beige */
 	color:#14a27c; /* Light Green */
 	color:#599e99; /* Lightest Blue */
+}
+.signin span:after {
+  content: "&#9001;";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.signin:hover span {
+  padding-right: 25px;
+}
+
+.signin:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.signin span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.signin span:after {
+  content: '?';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.signin:hover span {
+  padding-right: 25px;
+}
+
+.signin:hover span:after {
+  opacity: 1;
+  right: 0;
 }
