@@ -8,10 +8,13 @@ $username = $_SESSION['id'];
 $password = $_POST['upassword'];
 $uemail = $_POST['uemail'];
 
-$finished = mysqli_query($conn, "UPDATE users SET email = '$uemail' WHERE username = '$username'");
-
 $newedit = mysqli_query($conn, "SELECT * FROM users WHERE username = '$username'");
 $row = mysqli_fetch_array($newedit);
+
+if (isset($_POST['signup'])){
+	echo "<h1><center>Your edit was sucessfully made. Please Refresh.</centerd></h1>";
+	$finished = mysqli_query($conn, "UPDATE users SET email = '$uemail' WHERE username = '$username'");
+}
 
 ?>
 
