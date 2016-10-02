@@ -39,3 +39,5 @@ if (isset($_POST['login'])){
 	<a href="signup.php">Don't have an account Yet?<br><div class="signin"><span>Register</span></div><br></a>
 </div>
 </div>
+
+<?php include 'footer.php' ?>

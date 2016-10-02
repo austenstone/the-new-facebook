@@ -52,3 +52,6 @@ if(isset($_POST['signup'])){
 		<a href="login.php">Already have an account?<br><div class="signin"><span>Log In</span></div><br></a>
 	</div>
 </div>
+
+
+<?php include 'footer.php' ?>

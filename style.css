@@ -70,7 +70,7 @@ input{
 	color:#599e99; /* Lightest Blue */
 }
 .signin span:after {
-  content: "&#9001;";
+  content: "";
   position: absolute;
   opacity: 0;
   top: 0;
@@ -95,7 +95,7 @@ input{
 }
 
 .signin span:after {
-  content: '?';
+  content: '>>';
   position: absolute;
   opacity: 0;
   top: 0;

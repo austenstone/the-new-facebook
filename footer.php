@@ -1,3 +1,3 @@
 <footer>
-<p>copyright - Austen Stone & Max 2016</p>
+<p>&copy; Austen Stone & Max Shash October 2016</p>
 </footer>

@@ -13,7 +13,5 @@ session_start();
 	</div>
 </div>
 </body>
-<?php $time = date('Y-m-d G:i:s');
-echo $time;?>
 
 <?php include 'footer.php' ?>
