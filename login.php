@@ -8,11 +8,8 @@ if (isset($_POST['login'])){
     $checkifuserexists = mysqli_query($conn, "SELECT * FROM users WHERE username = '$username' LIMIT 1");
 
     if ($checkifuserexists -> num_rows > 0){
-        echo "<h1><center>Found a user</center></h1>";
         $row = mysqli_fetch_array($checkifuserexists);
-        $hashed_password = $row['password'];
-        echo $hashed_password;
-        echo "<h1><center>Password check</center></h1>";
+        $hashed_password = $row["password"];
         if (password_verify($password, $hashed_password)){
             header('Location: index.php');
         }else{
