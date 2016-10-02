@@ -70,7 +70,7 @@ input{
 	color:#599e99; /* Lightest Blue */
 }
 .signin span:after {
-  content: "";
+  content: "&#9001;";
   position: absolute;
   opacity: 0;
   top: 0;
@@ -95,7 +95,7 @@ input{
 }
 
 .signin span:after {
-  content: '>>';
+  content: '?';
   position: absolute;
   opacity: 0;
   top: 0;
@@ -166,11 +166,13 @@ font-family: 'Oswald', sans-serif;
 }
 
 .logout{
-	display:inline-block;
+	display: block;
 	padding: 0px 10px;
 	background: black;
-	vertical-align: top;
 	border-radius: 10px;
+	vertical-align: top;
+	float: right;
+	width: 122px;
 }
 
 .logout p{
