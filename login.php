@@ -1,8 +1,11 @@
 <?php
 require_once 'pdoconnection.php';
 require_once 'header.php';
-
 session_start();
+
+if(isset($_SESSION['id'])){
+    header("Location: index.php");
+}
 
 if (isset($_POST['login'])){
     $username = $_POST['uname'];
