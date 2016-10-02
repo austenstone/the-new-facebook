@@ -10,6 +10,5 @@ if(!isset($_SESSION['id'])){
     <h2><?php echo "<p>Signed in as " . $_SESSION['id']  . "!</p>" ?></h2>
 
 </body>
-<footer>
-<p>copyright - Austen Stone & Max 2016</p>
-</footer>
+
+<?php include 'footer.php' ?>
