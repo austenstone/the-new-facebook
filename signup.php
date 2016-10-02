@@ -31,12 +31,12 @@ if(isset($_POST['signup'])){
  ?>
 <!DOCTYPE html>
 
-<form action="signup.php" method="post" id="loginform">
+<div class="logincontainer">
+<form action="signup.php" class="form1" method="post" id="loginform">
 	<div class="imgcontainer">
 	<div>
 		<img src="">
 	</div>
-	<div class="logincontainer">
 		<input type="text" placeholder="Username" name="uname" required><br>
 		<input type="password" placeholder="Password" name="upassword" required><br>
 		<input type="text" placeholder="E-mail" name="uemail" required><br>
